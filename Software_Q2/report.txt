@@ -1,1 +1,9 @@
 
+For the lane masking part I used hsv instead of rgb because rgb or csy can get confused between same colour with different intensities.For example yellow under shadow might be recognised as brown in rgb whereas hsv does the job well.
+
+When it comes to the lane detection part I had to first denoise the image using gaussian blur which preserves edges at the same time smoothening the image.So I had to convert it to grayscale as it would take less time and lane detection is colour independent.
+Then to detect the strong edges I used canny edge detection as sobel filter would have detected even random noise as edges.
+
+Then to find the endpoints of these edges so that we could form lines, I used hough transform although in a real time situation I'd use  probabilistic hough transform as it is faster.
+
+For the final part using the endpoints array we calculated the slopes and intercepts and took their median to avoid outliers.After getting the parameters we found the intersection point of the left and right lane and joined it to the left and right bottom most points.For the middle lane we took values of x which were close enoough within 1 unit so that the slope would be too high and then averaging these two x values we joined this point to the previously obtained intersection point to get the middle lane.
