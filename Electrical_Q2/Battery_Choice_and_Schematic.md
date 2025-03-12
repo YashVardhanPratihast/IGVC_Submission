@@ -5,7 +5,7 @@ The battery pack should provide a potential difference of 48V Also-
 Without Added Weight:
   
   Average Power consumption taking into account efficiency would be
-    =(48*30+150)/0.82= 1939 Watts
+    =(48 * 30+150)/0.82= 1939 Watts
     
   Therefore for 2hrs the average energy needed will be 3878 Wh
     
@@ -13,7 +13,7 @@ Without Added Weight:
    
   Peak power consumption would be
   
-  =(48*47+150)/0.82=2406 W
+  =(48 * 47+150)/0.82=2406 W
   
   Therefore for 2hrs the peak energy needed will be 4812 Wh
   
@@ -23,13 +23,13 @@ With added weight the motor would draw 15% more current therefore:
   
   Avg power consumption
     
-  =(48*30*1.15+150)/0.82= 2202 Watts
+  =(48 * 30 * 1.15+150)/0.82= 2202 Watts
   
   =>Avg current drawn= 2202/48=46A
   
   Peak power consumption
     
-  =(48*47*1.15+150)/0.82= 3347 Watts
+  =(48 * 47 * 1.15+150)/0.82= 3347 Watts
   
   Therefore for 2hrs the peak energy needed will be 6694 Wh
   
